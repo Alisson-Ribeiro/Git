@@ -1,0 +1,1 @@
+added some nice and cozy comments here for testing the 'git checkout 'hash'' command and travel along the timeline creating new branches
