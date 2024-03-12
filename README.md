@@ -1,9 +1,8 @@
-Research purposes only
+# Git commands with description for later reference
+### Research purposes only
 
-Git commands with description for later reference
-
-### Main branches commands
-##  Efficient use of branches is crucial for collaborative and organized development.
+## Main branches commands
+###  Efficient use of branches is crucial for collaborative and organized development.
 
 * git branch branch-name ---> creates a new branch with the specified name
 
