@@ -20,6 +20,6 @@
 
 * git fetch origin branch-name ---> brings (download) a remote branch to your local repository
 
-* git merge branch-name ---> merges a branch into another branch, creates a merge commit and keeps the whole commit history from both branches. More suitable for shared branch work where more people are working together.
+* git merge branch-name ---> merges a branch into your current branch, creates a merge commit and keeps the whole commit history from both branches. If you use the command 'git log', you will be able to see every commit from both branches now in a single branch. The 'git merge' command doesn't delete the merged branch, you can still checkout to the merged branch and keep working and committing to the branch, if you do so, these commits are not added automatically, so you'll need to 'git merge' again. Git merge is often more used for shared branch work where more people are working together.
 
 * git branch -v ---> lists the existent branches in repository, along with last commit info of each branch
