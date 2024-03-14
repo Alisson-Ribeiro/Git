@@ -30,3 +30,6 @@
 ### The 'git checkout' command is a versatile one, it can (among other things) restore especific files or even commits, while the new 'git switch' command is used only to switch between branches. futhermore, the 'git switch' command checks for additional consistencies that 'git checkout' doesn't, for example the 'git switch' would abort the operation if it would lead to loss of local changes.
 
 * git switch branch-name ---> switches to the specified branch-name
+
+* git switch - ---> switches back to previous branch, similar to 'cd -'
+
