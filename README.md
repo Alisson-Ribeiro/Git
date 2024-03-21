@@ -33,3 +33,10 @@
 
 * git switch - ---> switches back to previous branch, similar to 'cd -'
 
+* git switch --create branch-name ---> creates and switches to the name-specified branch
+
+## Restore
+### Introduced in version 2.23, 'git restore' we can use to restore a file to the last committed version of it.
+
+* git restore --staged file.py ---> Undo changes made to a file, equivalent to 'git reset file.py'
+
