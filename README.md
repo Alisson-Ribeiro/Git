@@ -10,6 +10,8 @@
 
 * git checkout -b branch name ---> creates and switches to the specified branch in a single command
 
+* git checkout 'commit-hash' ---> travels along the development timeline to the specified commit
+
 * git branch ---> lists every existent branches in repository
 
 * git branch -d branch-name ---> deletes a local branch
@@ -40,3 +42,14 @@
 
 * git restore --staged file.py ---> Undo changes made to a file, equivalent to 'git reset file.py'
 
+## Diff
+### Shows changes between commits
+
+* git diff 'commit-hash'..'commit-hash' ---> shows the difference between the 2 specified hash commits
+
+## Tag
+### A known checkpoint for your project
+
+* git tag ---> lists the existent tags
+
+* git tag -A 'tag' -m "message" ---> creates a tag with a message, 'tag' generally is like a release format 'V0.1.0'
