@@ -5,6 +5,12 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 * git init
 * git log
+* git clone
+* git config
+* git alias
+* git reset
+* git revert
+* git checkout
 * git switch
 * git branch
 * git add
