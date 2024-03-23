@@ -1,4 +1,4 @@
-### Every git command (or most of them) have arguments which add many possibilities and features to the given command, in this repository you will find the most usual ones. For the Official documentation refer to: [text](https://git-scm.com/docs)
+Every git command (or most of them) have arguments which add many possibilities and features to the given command, in this repository you will find the most usual ones. For the Official documentation refer to: [https://git-scm.com/docs]
 
 ## A standalone individual developer does not exchange patches with other people, and works alone in a single repository, using the following commands:
 (obs: some of these commands will not have a description in this repository)
