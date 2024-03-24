@@ -82,7 +82,11 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 * git tag ---> lists the existent tags
 
-* git tag -A 'tag' -m "message" ---> creates a tag with a message, 'tag' generally is like a release format 'V0.1.0'
+* git tag -A 'tag' -m "message" ---> creates a tag with a message, 'tag' generally is like a release format 'v1.0'
+
+* git tag -d v1.0 ---> deletes the specified tag
+
+### Sharing of tags is similar to branches. By default, 'git push' does not send tags to remote. Tags demand a explicit 'git push' ---> example: 'git push origin v1.0'
 
 ## Stash
 ### store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point. Hint: never commit a not working patch! Stash it instead! Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
