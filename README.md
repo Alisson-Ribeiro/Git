@@ -67,9 +67,15 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git restore --staged file.py ---> Undo changes made to a file, equivalent to 'git reset file.py'
 
 ## Diff
-### Shows changes between commits
+### Shows changes between commits, branches, files and others
 
-* git diff 'commit-hash'..'commit-hash' ---> shows the difference between the 2 specified hash commits
+* git diff ---> shows the changes made (and were not commited) since the last commit by default
+
+* git diff branch1 branch2 ---> shows a comparison between the 2 specified branches
+
+* git diff 'commit-hash' 'commit-hash' ---> shows the difference between the 2 specified hash commits
+
+* git diff --color-words ---> highlight the changes made with red (deletion), green (insertion) and white (not touched by any change)
 
 ## Tag
 ### A known checkpoint for your project
@@ -99,6 +105,6 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 * git stash show ---> shows a summary, or you can add as an option -p (or --patch) to visualize the full stash comparison
 
-* git stash drop stash@{} ---> deletes the stash informed in brackets, for a single drop
+* git stash drop stash@{n} ---> deletes the stash informed in brackets, for a single drop
 
 * git stash clear ---> to delete all stashes
