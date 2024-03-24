@@ -82,13 +82,23 @@ Every git command (or most of them) have arguments which add many possibilities 
 ### store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point. Hint: never commit a not working patch! Stash it instead! Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
 
 * git stash ---> stashes changes for later use
-Obs: Stashes are local to your repository, stashes are not sent to remote when pushing (git push)
-Obs¹: It does not include untracked and ignored files
+### Obs: Stashes are local to your repository, stashes are not sent to remote when pushing (git push)
+### Obs¹: It does not include untracked and ignored files
 
 * git stash pop ---> brings out of the stash and apllies to the working copy, removing from stash
+### Obs: Brings out of the stash the most recent by default
+### Obs¹: You can choose which stash to bring by informing its id as last argument ---> example: 'git stash pop stash@{2}'
 
 * git stash apply ---> brings out of the stash and apllies to the working copy, keeping the copy in stash... it's useful if you may apply the same stash to more branches
 
 * git stash -u (or --include-untracked) ---> stashes changes for later use, including untracked files but not the ignored ones
 
 * git stash -a (or --all) ---> stashes changes for later use, includes untracked and ignored files
+
+* git stash save "message" ---> adds a message to your stash, useful when more stashes are created so you don't get lost
+
+* git stash show ---> shows a summary, or you can add as an option -p (or --patch) to visualize the full stash comparison
+
+* git stash drop stash@{} ---> deletes the stash informed in brackets, for a single drop
+
+* git stash clear ---> to delete all stashes
