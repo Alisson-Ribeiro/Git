@@ -89,7 +89,7 @@ Every git command (or most of them) have arguments which add many possibilities 
 ### Sharing of tags is similar to branches. By default, 'git push' does not send tags to remote. Tags demand a explicit 'git push' ---> example: 'git push origin v1.0'
 
 ## Stash
-### store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point. Hint: never commit a not working patch! Stash it instead! Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
+### Store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point. Hint: never commit a not working patch! Stash it instead! Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
 
 * git stash ---> stashes changes for later use
 ### Obs: Stashes are local to your repository, stashes are not sent to remote when pushing (git push)
@@ -112,3 +112,14 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git stash drop stash@{n} ---> deletes the stash informed in brackets, for a single drop
 
 * git stash clear ---> to delete all stashes
+
+## Alias
+### Alias is not a command in git, but a tool you can configure to obtain efficiency and productivity. Aliases are created using the 'git config' command. See these examples:
+
+* git config --global alias.co ---> checkout
+
+* git config --global alias.br ---> branch
+
+* git config --global alias.st ---> status
+
+### It creates shortcuts with global storage for the given command
