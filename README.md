@@ -89,7 +89,9 @@ Every git command (or most of them) have arguments which add many possibilities 
 ### Sharing of tags is similar to branches. By default, 'git push' does not send tags to remote. Tags demand a explicit 'git push' ---> example: 'git push origin v1.0'
 
 ## Stash
-### Store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point. Hint: never commit a not working patch! Stash it instead! Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
+### Store your code for later use (it's not a commit). Archives (or stashes) changes you made to the working copy, so you can work anywhere else, and then return to the stashed point.
+### Hint: never commit a not working patch! Stash it instead!
+### Attention: 'git stash' command does not stashes changes made to untracked and ignored files.
 
 * git stash ---> stashes changes for later use
 ### Obs: Stashes are local to your repository, stashes are not sent to remote when pushing (git push)
@@ -123,3 +125,16 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git config --global alias.st ---> status
 
 ### It creates shortcuts with global storage for the given command
+
+## Log
+### See what and where is anything in your project. The 'git log' and its variations add so many visualizations for you to handle the info you need.
+
+* git log --->
+
+* git log --oneline --->
+
+* git log --oneline --decorate --->
+
+### The 'git log' command includes many options to show comparisons with each commit. The most commom ones are: '--stat' and '-p'.
+
+### The '--stat' option shows the number of insertions e deletions for each changed file by each commit. It's useful for a brief summary of changes made by each commit. For example: the following commit added 67 lines to the file 'file.py' and removed 38 lines.
