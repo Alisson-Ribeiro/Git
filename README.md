@@ -138,3 +138,5 @@ Every git command (or most of them) have arguments which add many possibilities 
 ### The 'git log' command includes many options to show comparisons with each commit. The most commom ones are: '--stat' and '-p'.
 
 ### The '--stat' option shows the number of insertions e deletions for each changed file by each commit. It's useful for a brief summary of changes made by each commit. For example: the following commit added 67 lines to the file 'file.py' and removed 38 lines.
+
+### If you want to see the changes introduced by each commit, you can use the option '-p' in 'git log'. Howerver, for commits with many changes, the output can be long and hard to handle
