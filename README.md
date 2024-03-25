@@ -140,3 +140,15 @@ Every git command (or most of them) have arguments which add many possibilities 
 ### The '--stat' option shows the number of insertions e deletions for each changed file by each commit. It's useful for a brief summary of changes made by each commit. For example: the following commit added 67 lines to the file 'file.py' and removed 38 lines.
 
 ### If you want to see the changes introduced by each commit, you can use the option '-p' in 'git log'. Howerver, for commits with many changes, the output can be long and hard to handle
+
+* git shortlog ---> is a special version of 'git log', groups each commit by author and shows the first line of each commit message. It's a easy way to see where someone is working at.
+
+* git log --graph ---> draws a ASCII graphic representing the branch structure of the commit history, it's usually used with '--oneline' and '--decorate' options. It's a good tool for simple repository with few branches, but for larger projects with many branches you'd rather use a tool called 'Sourcetree'. Link: [https://www.atlassian.com/br/software/sourcetree]
+
+* git log -n ---> filter and shows only the n last commits
+
+* git log --after="2024-1-1" ---> filter and shows only the commits created after the specified date. Also works with '--before="2024-1-1"'
+
+* git log --after="2024-1-1" --before="2024-1-2" ---> filters and shows the commits created between the specified dates
+
+* git log --author="Jose" ---> filters and shows commits created by a specific user. You can also add arguments to the filter, for example: '--author="jose\|Maria"' ---> this will return commits created by Jose or Maria
