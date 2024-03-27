@@ -129,11 +129,9 @@ Every git command (or most of them) have arguments which add many possibilities 
 ## Log
 ### See what and where is anything in your project. The 'git log' and its variations add so many visualizations for you to handle the info you need.
 
-* git log --->
+* git log ---> shows every commit in current branch (no filter)
 
-* git log --oneline --->
-
-* git log --oneline --decorate --->
+* git log --oneline ---> a summary of git log
 
 ### The 'git log' command includes many options to show comparisons with each commit. The most commom ones are: '--stat' and '-p'.
 
