@@ -1,3 +1,6 @@
+# Git commands with description for later reference
+### Research purposes only
+
 Every git command (or most of them) have arguments which add many possibilities and features to the given command, in this repository you will find the most usual ones. For the Official documentation refer to: [https://git-scm.com/docs]
 
 ## A standalone individual developer does not exchange patches with other people, and works alone in a single repository, using the following commands:
@@ -21,9 +24,6 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git merge
 * git rebase
 * git tag
-
-# Git commands with description for later reference
-### Research purposes only
 
 ## Main branches commands
 ### Efficient use of branches is crucial for collaborative and organized development.
@@ -151,4 +151,8 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 * git log --after="2024-1-1" --before="2024-1-2" ---> filters and shows the commits created between the specified dates
 
-* git log --author="Jose" ---> filters and shows commits created by a specific user. You can also add arguments to the filter, for example: '--author="jose\|Maria"' ---> this will return commits created by Jose or Maria
+* git log --author="Jose" ---> filters and shows commits created by a specific user. You can also add arguments to the filter, for example: '--author="jose\\|Maria"' ---> this will return commits created by Jose or Maria
+
+* git log -S"Hello, World!" ---> filters and shows commits that introduced a specific line
+
+* git log main..feature ---> shows the commits present in feature branch, but not in main branch. It's the progress the feature branch has achieved since it was separated from main
