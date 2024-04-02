@@ -154,3 +154,15 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git log -S"Hello, World!" ---> filters and shows commits that introduced a specific line
 
 * git log main..feature ---> shows the commits present in feature branch, but not in main branch. It's the progress the feature branch has achieved since it was separated from main
+
+## Collaborative workflows
+### How to sincronize (git remote) || the 'git remote' command is an interface to manage a list of remote entries to the repository
+
+### How to view git remote settings
+
+* git remote ---> lists the remote connections you have with other repos
+
+* git remote -v ---> lists the remote connection with other repos with the URL included for each connection
+
+### shows where you are (fetch)ing from and where you (push)ing to
+
