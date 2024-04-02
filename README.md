@@ -168,9 +168,14 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 ## How to inspect a remote
 
-* git remote show 'remote-connection' ---> Gives a detailed output about the remote settings. This output contains a list of related branches to remote and also to the attached terminals to fetch and push
+* git remote show 'remote-connection' ---> gives a detailed output about the remote settings. This output contains a list of related branches to remote and also to the attached terminals to fetch and push
 
 ## How to send to remote
 
-* git push 'remote-name' 'branch-name' ---> Sends a local state to the specified remote
+* git push 'remote-name' 'branch-name' ---> sends a local state to the specified remote
 
+## Renaming and removing remotes (self-explanatory)
+
+* git remote rename 'old-name' 'new-name'
+
+* git remote rm 'remote-name'
