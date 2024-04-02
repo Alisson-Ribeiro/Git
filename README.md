@@ -169,3 +169,8 @@ Every git command (or most of them) have arguments which add many possibilities 
 ## How to inspect a remote
 
 * git remote show 'remote-connection' ---> Gives a detailed output about the remote settings. This output contains a list of related branches to remote and also to the attached terminals to fetch and push
+
+## How to send to remote
+
+* git push 'remote-name' 'branch-name' ---> Sends a local state to the specified remote
+
