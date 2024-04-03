@@ -156,9 +156,9 @@ Every git command (or most of them) have arguments which add many possibilities 
 * git log main..feature ---> shows the commits present in feature branch, but not in main branch. It's the progress the feature branch has achieved since it was separated from main
 
 ## Collaborative workflows
-## How to sincronize (git remote) || the 'git remote' command is an interface to manage a list of remote entries to the repository
+### How to sincronize (git remote) || the 'git remote' command is an interface to manage a list of remote entries to the repository
 
-## How to view git remote settings
+### How to view git remote settings
 
 * git remote ---> lists the remote connections you have with other repos
 
@@ -166,16 +166,34 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 ### Shows where you are (fetch)ing from and where you (push)ing to
 
-## How to inspect a remote
+### How to inspect a remote
 
 * git remote show 'remote-connection' ---> gives a detailed output about the remote settings. This output contains a list of related branches to remote and also to the attached terminals to fetch and push
 
-## How to send to remote
+### Setting up a new remote repository
+
+* git remote add 'repository-url'
+
+### How to send to remote
 
 * git push 'remote-name' 'branch-name' ---> sends a local state to the specified remote
 
-## Renaming and removing remotes (self-explanatory)
+### Renaming and removing remotes (self-explanatory)
 
 * git remote rename 'old-name' 'new-name'
 
 * git remote rm 'remote-name'
+
+## Pull
+### The 'git pull' command is used to fetch and download content from remote repositories and immediately update the local repo so the contents are the same. The command is a combination of other two commands: 'git fetch' and 'git merge'.
+### The command 'git fetch' may be taken as the same to 'git pull'. Both are used to download remote data. But there are important security issues between them. The 'git fetch' is the safest option, while 'git pull' is less secure. The 'git fetch' downloads the remote data and does not alter the state of the local repo. The 'git pull' downloads remote data and immediately merges to the local repo, what may lead to conflicts.
+
+* git pull origin main ---> by default fetches, merges then creates a local commit with the content of divergent remote commits
+
+### The 'git pull' comand can also receive the option '--rebase', it copies the divergent remote commits and rewrites the local ones to appear after in the commit historic instead of creating a merge commit.
+
+* git pull --rebase ---> (explanation above)
+
+### In fact, 'git pull --rebase' is a most commom used option that there's an option dedicated to set it up
+
+* git config --global branch.autosetuprebase always ---> after executing this command, every 'git pull' will be integrated by 'git rebase' instead of 'git merge'
