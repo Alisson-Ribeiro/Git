@@ -40,6 +40,10 @@ Every git command (or most of them) have arguments which add many possibilities 
 
 * git branch -d 'branch-name' ---> deletes a branch
 
+* git branch -D 'branch-name' ---> forces deletion of a branch which has unmerged changes (it's strongly recommended to avoid deleting branches with unmerged changes as this can disrupt your Git history and make it difficult to recover lost work)
+
+* git push origin -d 'branch-name' --->  If you want to delete a remote branch, you'll need to push the deletion to the remote repository
+
 * git push 'remote' :'branch-name' ---> deletes the remote branch
 
 * git branch -m 'new-branch-name' ---> renames a local branch
